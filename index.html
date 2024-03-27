@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link rel="stylesheet" href="assets\css\style.css">
+    <script src="./assets/Js/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -64,44 +65,45 @@
         <h2>Faça o seu cadastro para receber notícias</h2>
         <form action="">
             <div class="campo linha">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" autocomplete="off">
             </div>
             
             <div class="campo">
-                <label action="email">Email</label>
-                <input type="text" name="Email" id="email">
+                <label for="email">Email:</label>
+                <input type="text" id="email" autocomplete="off">
             </div>
            
             <div class="campo">
-                <label for="esporte">Esporte Preferido</label>
-                    <select id="esporte">
-                        <option value="1">Boxe</option>
-                        <option value="2">Futebol</option>
-                        <option value="">Basquete</option>
-                     </select>
+                <label for="esporte">Esporte Preferido:</label>
+                <select id="esporte">
+                    <option value="1">Boxe</option>
+                    <option value="2">Futebol</option>
+                    <option value="3">Basquete</option>
+                </select>
             </div>
             
-            <div class="campo linha"><label for="">Deseja receber notícias de outros esportes?</label>
+            <div class="campo linha">
+                <label for="prototipo_sim">Deseja receber notícias de outros esportes?</label>
                 <div>
-                <input type="radio" id="prototipo_sim" name="prototipo">
-                <label for="prototipo_sim">Sim</label>
-                <input type="radio" id="prototipo_nao" name="prototipo">
-                <label for="prototipo_nao">Não</label>
+                    <input type="radio" id="prototipo_sim" name="prototipo">
+                    <label for="prototipo_sim">Sim</label>
+                    <input type="radio" id="prototipo_nao" name="prototipo">
+                    <label for="prototipo_nao">Não</label>
                 </div>
             </div>
 
             <div class="campo">
-                <input type="checkbox" name="" id="js">
-                <label for="">Sobre o esporte escolhido,deseja receber notícias sobre o mesmo em outros países ?</label>
+                <label for="js">Sobre o esporte escolhido, deseja receber notícias sobre o mesmo em outros países?</label>
+                <input type="checkbox" id="js">
             </div>
             
-            <div class="campo"
-            ><label for="tempo">Receber notícias por quantos meses</label>
+            <div class="campo">
+                <label for="tempo">Receber notícias por quantos meses:</label>
                 <input type="range" min="1" max="12" id="tempo">
+                <output id="valor">1 mês</output>
             </div>
-            </form>
-
+        </form>
     </section>
 </body>
 </html>
