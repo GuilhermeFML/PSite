@@ -200,3 +200,35 @@ input[type = checkbox]{
 input[type = range]{
     accent-color: var(--color-title);
 }
+
+#btn-cadastro {
+    background-color: var(--color-back);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: auto; 
+    max-width: 200px; 
+    margin-top: 20px; 
+}
+
+#btn-cadastro:hover {
+    background-color: darkgreen;
+}
+
+#secao-cadastro {
+    text-align: center; 
+    padding: 3rem 0; 
+}
+
+#secao-cadastro form {
+    display: inline-block; 
+    width: 100%; 
+}
+
+
+

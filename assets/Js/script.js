@@ -18,3 +18,6 @@ function calcular() {
     const prototipoNao = document.querySelector("#prototipo_nao").checked;
 
 }
+document.getElementById("btn-cadastro").addEventListener("click", function() {
+   
+    alert("Cadastro realizado com sucesso");})
