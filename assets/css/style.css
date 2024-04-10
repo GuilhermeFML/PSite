@@ -202,7 +202,7 @@ input[type = range]{
 }
 
 #btn-cadastro {
-    background-color: var(--color-back);
+    background-color: var(--color-title);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -228,6 +228,17 @@ input[type = range]{
 #secao-cadastro form {
     display: inline-block; 
     width: 100%; 
+}
+
+#secao-cadastro {
+    height: 100vh;
+    padding: 3rem;
+    background-color: lightgreen; /* Adicionando cor de fundo verde */
+    border-radius: 10px; /* Adicionando borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicionando sombra */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
